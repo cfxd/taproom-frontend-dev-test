@@ -15,6 +15,7 @@ const rollup = require("gulp-rollup-lightweight");
 const babel = require("rollup-plugin-babel");
 const noderesolve = require("rollup-plugin-node-resolve");
 const commonjs = require("rollup-plugin-commonjs");
+const rollupCss = require("rollup-plugin-postcss");
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
 
@@ -106,6 +107,7 @@ const jsBuildTask = function (fileName) {
         mainFields: ["module", "main"],
       }),
       commonjs(),
+      rollupCss(cssnano()),
     ],
     onwarn: warning => {
       //   This avoids a weird issue with some of the rollup plugins just spamming warnings

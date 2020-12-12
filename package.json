@@ -44,6 +44,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "2.8.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -55,5 +56,7 @@
     "deploy-dev": "theme deploy --env=development",
     "deploy-stage": "theme deploy --env=staging "
   },
-  "dependencies": {}
+  "dependencies": {
+    "accordion-js": "^3.0.0"
+  }
 }
