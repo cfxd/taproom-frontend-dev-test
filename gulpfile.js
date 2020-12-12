@@ -107,7 +107,7 @@ const jsBuildTask = function (fileName) {
         mainFields: ["module", "main"],
       }),
       commonjs(),
-      rollupCss(cssnano()),
+      rollupCss(cssPlugins),
     ],
     onwarn: warning => {
       //   This avoids a weird issue with some of the rollup plugins just spamming warnings
