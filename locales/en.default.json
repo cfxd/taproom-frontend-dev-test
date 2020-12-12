@@ -203,6 +203,10 @@
     }
   },
   "collections": {
+    "featured": {
+      "buy_button": "Buy Now",
+      "buy_button_variants": "Configure"
+    },
     "general": {
       "view_all": "View all",
       "view_all_label": "View all products in the {{ collection_name }} collection",
